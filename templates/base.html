@@ -1,0 +1,61 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Visualize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Visualize by TEMPLATED</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">#}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% include 'navbar.html' %}
+        <!-- Icon Library -->
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+        <span class="avatar"><img src="{% static 'images/avatar.jpg' %}" alt=""/></span>
+        <h1>This is <strong>Visualize</strong>, a responsive site template designed by <a href="http://templated.co">TEMPLATED</a><br/>
+            and released for free under the Creative Commons License.</h1>
+        <ul class="icons">
+            <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+            <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+    </header>
+
+
+    <!-- Main -->
+        <!-- Thumbnails -->
+        {% block content %}
+        {% endblock %}
+        </section>
+        <!-- Footer -->
+        <footer id="footer">
+            <p>&copy; Untitled. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>. Demo Images:
+                <a href="http://unsplash.com">Unsplash</a>.</p>
+        </footer>
+
+</div>
+
+<!-- Scripts -->
+<!-- jQuery -->
+{#    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>#}
+{#    <!-- Latest compiled and minified JavaScript -->#}
+{#    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>#}
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+<script src="{% static 'js/skel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+   <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

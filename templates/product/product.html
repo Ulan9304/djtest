@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                {% for image_item in product.productimage_set.all %}
+                    <div class="product-image-item">
+                        <img src="{{ image_item.image.url }}" class="img-responsive">
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-6">
+                <h1 class="text-center">
+                    {{ product.name }}
+                </h1>
+                <div class="">
+                    <p> Описание: {{ product.short_description }}
+                    </p>
+                    <p>
+                        Price: {{ product.price }}
+                    </p>
+                </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit_btn" class="btn btn-success btn-buy"
+                                data-product_id = "{{ product.id }}"
+                                data-name = "{{ product.name }}"
+                                date-price = "{{ product.price }}">
+                            Купить
+                        </button>
+                    </div>
+{% endblock %}

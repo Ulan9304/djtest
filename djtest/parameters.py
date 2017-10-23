@@ -1,0 +1,6 @@
+DB_NAME = 'djtest'
+DB_USER = 'root'
+DB_PASS = ''
+ROOT_FOLDER = 'djtest'
+EMAIL_USER = ''
+EMAIL_PASSWORD = ''
