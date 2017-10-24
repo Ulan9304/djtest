@@ -8,12 +8,25 @@
              {% endfor %}
      </div>
 </div>
+
     <div class= "line">
     <h1 class="laptops"> Laptops </h1>
     </div>
     <div class="container">
      <div class="row 2">
              {% for product_image in products_images_laptop %}
+                 {% include 'product_item.html' %}
+             {% endfor %}
+     </div>
+</div>
+
+    <div class= "line 2">
+    <h1 class="personal"> PC </h1>
+    </div>
+
+    <div class="container">
+     <div class="row 3">
+             {% for product_image in products_images_personal %}
                  {% include 'product_item.html' %}
              {% endfor %}
      </div>

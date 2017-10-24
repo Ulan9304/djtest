@@ -2637,10 +2637,11 @@
 			}
 
 		}
+
 .product-item {
 	height: 250px;
 	width: 250px;
-	background-color: rgba(23, 30, 54, 0.86)
+	background-color: red;
 	border: 1px solid lightgrey;
 	position: relative;
 	padding: 10px 0 10px 0;
@@ -2648,8 +2649,9 @@
 	margin-bottom: 10px;
 }
 .product {
-	background-color: white;
+	background-color: red;
 }
+
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {

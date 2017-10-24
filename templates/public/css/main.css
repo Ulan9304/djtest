@@ -2638,16 +2638,7 @@
 			}
 
 		}
-.product-item {
-	height: 300px;
-	width: 300px;
-	background-color: white;
-	border: 1px solid lightgrey;
-	position: relative;
-	padding: 10px 0 10px 0;
-	text-align: center;
-	margin-bottom: 10px;
-}
+
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
@@ -3097,9 +3088,4 @@ ul.dropdown-menu {
 	margin: 50px;
 	padding: 10px;
 	text-align: center;
-}
-
-.product-image-item {
-    padding: 5px;
-    margin-bottom: 5px;
 }
