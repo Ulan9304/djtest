@@ -2900,6 +2900,9 @@ body {
   border: none;
   margin: 0;
 }
+.nav li.basket {
+	float: right;
+}
 .nav li.admin {
   float: right;
 }
@@ -3088,4 +3091,7 @@ ul.dropdown-menu {
 	margin: 50px;
 	padding: 10px;
 	text-align: center;
+}
+.navbar-top {
+	height: 30px;
 }

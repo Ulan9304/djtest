@@ -9,7 +9,7 @@ from django.contrib.auth import (
 User = get_user_model()
 
 class UserLoginForm(forms.Form):
-    username = forms.CharField()
+    username = forms.CharField(max_length=30)
     password = forms.CharField(widget=forms.PasswordInput())
 
     def clean(self, *args, **kwargs):
